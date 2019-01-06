@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-TedoCoreApp-2E351BDE-4700-4FCC-9773-37E247FA7390</UserSecretsId>
+    <AssemblyName />
   </PropertyGroup>
 
   <ItemGroup>
