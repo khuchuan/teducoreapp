@@ -7,11 +7,17 @@ using TeduCoreApp.Infrastructure.SharedKernel;
 
 namespace TeduCoreApp.Data.Entities
 {
-    [Table("Footers")]
-    public class Footer : DomainEntity<string>
+    [Table("Colors")]
+    public class Color : DomainEntity<int>
     {
 
-        [Required]
-        public string Content { set; get; }
+        [StringLength(250)]
+        public string Name
+        {
+            get; set;
+        }
+
+        [StringLength(250)]
+        public string Code { get; set; }
     }
 }

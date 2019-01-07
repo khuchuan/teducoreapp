@@ -1,18 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using TeduCoreApp.Data.Enums;
+using TeduCoreApp.Infrastructure.SharedKernel;
 
 namespace TeduCoreApp.Data.Entities
 {
-  public  class Contact
+    [Table("ContactDetails")]
+    public class Contact : DomainEntity<string>
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public string Phone { get; set; }
-        public string Website { get; set; }
-        public string Email { get; set; }
-        public int Longtitude { get; set; }
-        public int Latitude { get; set; }
+
+        [StringLength(250)]
+        [Required]
+        public string Name { set; get; }
+
+        [StringLength(50)]
+        public string Phone { set; get; }
+
+        [StringLength(250)]
+        public string Email { set; get; }
+
+        [StringLength(250)]
+        public string Website { set; get; }
+
+        [StringLength(250)]
+        public string Address { set; get; }
+
+        public string Other { set; get; }
+
+        public double? Lat { set; get; }
+
+        public double? Lng { set; get; }
+
+        public Status Status { set; get; }
     }
 }

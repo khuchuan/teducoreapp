@@ -1,19 +1,37 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using TeduCoreApp.Infrastructure.SharedKernel;
 
 namespace TeduCoreApp.Data.Entities
 {
-    public class Slide
+    [Table("Slides")]
+    public class Slide : DomainEntity<int>
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Url { get; set; }
-        public string Image { get; set; }
-        public string Text { get; set; }
-        public int Sort { get; set; }
-        public int Status { get; set; }
-        
+        [StringLength(250)]
+        [Required]
+        public string Name { set; get; }
+
+        [StringLength(250)]
+        public string Description { set; get; }
+
+        [StringLength(250)]
+        [Required]
+        public string Image { set; get; }
+
+        [StringLength(250)]
+        public string Url { set; get; }
+
+        public int? DisplayOrder { set; get; }
+
+        public bool Status { set; get; }
+
+        public string Content { set; get; }
+
+        [StringLength(25)]
+        [Required]
+        public string GroupAlias { get; set; }
     }
 }

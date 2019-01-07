@@ -7,9 +7,8 @@ namespace TeduCoreApp.Data.Interfaces
     public interface IHasSeoMetaData
     {
         string SeoPageTitle { set; get; }
-        string SelAlias { set; get; }
-        string SeoKeywords { get; set; }
+        string SeoAlias { set; get; }
+        string SeoKeywords { set; get; }
         string SeoDescription { get; set; }
-
     }
 }

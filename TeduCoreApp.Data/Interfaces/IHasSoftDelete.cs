@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TeduCoreApp.Data.Interfaces
 {
-   public interface IHasSoftDelete
+    public interface IHasSoftDelete
     {
         bool IsDeleted { set; get; }
     }
