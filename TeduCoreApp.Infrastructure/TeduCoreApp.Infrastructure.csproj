@@ -6,7 +6,10 @@
 
   <ItemGroup>
     <Folder Include="Enums\" />
-    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TeduCoreApp.Utilities\TeduCoreApp.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

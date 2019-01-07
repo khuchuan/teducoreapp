@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace TedoCoreApp.Data.Migrations
+namespace TeduCoreApp.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

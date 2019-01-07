@@ -1,6 +1,6 @@
 using System;
 
-namespace TedoCoreApp.Models
+namespace TeduCoreApp.Models
 {
     public class ErrorViewModel
     {

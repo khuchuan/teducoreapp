@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using TedoCoreApp.Models;
+using TeduCoreApp.Models;
 
-namespace TedoCoreApp.Controllers
+namespace TeduCoreApp.Controllers
 {
     public class HomeController : Controller
     {
