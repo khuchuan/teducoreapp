@@ -5,15 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Implementation\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Automapper\" />
-    <Folder Include="ViewModels\" />
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TeduCoreApp.Data.EF\TeduCoreApp.Data.EF.csproj" />
     <ProjectReference Include="..\TeduCoreApp.Data\TeduCoreApp.Data.csproj" />
+    <ProjectReference Include="..\TeduCoreApp.Infrastructure\TeduCoreApp.Infrastructure.csproj" />
     <ProjectReference Include="..\TeduCoreApp.Utilities\TeduCoreApp.Utilities.csproj" />
   </ItemGroup>
 
