@@ -6,7 +6,7 @@ using TeduCoreApp.Infrastructure.Interfaces;
 
 namespace TeduCoreApp.Data.IRepositories
 {
-    public interface IProductCategoryRepository: IRepository<ProductCategory, int>
+    public interface IProductCategoryRepository : IRepository<ProductCategory, int>
     {
         List<ProductCategory> GetByAlias(string alias);
     }

@@ -8,9 +8,9 @@ namespace TeduCoreApp.Data.Enums
     {
         CashOnDelivery,
         OnlinBanking,
-        PaymentGateWay,
+        PaymentGateway,
         Visa,
-        Master,
+        MasterCard,
         PayPal,
         Atm
     }

@@ -17,9 +17,9 @@ namespace TeduCoreApp.Data.Entities
             Products = new List<Product>();
         }
 
-        public ProductCategory(string name, string description, int? parentId, int? homeOrder,
-          string image, bool? homeFlag, int sortOrder, Status status, string seoPageTitle, string seoAlias,
-          string seoKeywords, string seoDescription)
+        public ProductCategory(string name,string description, int? parentId,int? homeOrder,
+            string image,bool? homeFlag,int sortOrder,Status status,string seoPageTitle,string seoAlias,
+            string seoKeywords, string seoDescription)
         {
             Name = name;
             Description = description;
@@ -34,8 +34,6 @@ namespace TeduCoreApp.Data.Entities
             SeoKeywords = seoKeywords;
             SeoDescription = seoDescription;
         }
-
-
         public string Name { get; set; }
 
         public string Description { get; set; }

@@ -8,6 +8,7 @@ namespace TeduCoreApp.Application.ViewModels.Product
     public class ProductCategoryViewModel
     {
         public int Id { get; set; }
+
         public string Name { get; set; }
 
         public string Description { get; set; }
@@ -31,5 +32,4 @@ namespace TeduCoreApp.Application.ViewModels.Product
 
         public ICollection<ProductViewModel> Products { set; get; }
     }
-
 }

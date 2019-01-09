@@ -1,18 +1,25 @@
-﻿using TeduCoreApp.Infrastructure.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using TeduCoreApp.Infrastructure.Interfaces;
 
 namespace TeduCoreApp.Data.EF
 {
     public class EFUnitOfWork : IUnitOfWork
     {
-        // private readonly AppDbContext _context;
+        private readonly AppDbContext _context;
+        public EFUnitOfWork(AppDbContext context)
+        {
+            _context = context;
+        }
         public void Commit()
         {
-            throw new System.NotImplementedException();
+            _context.SaveChanges();
         }
 
         public void Dispose()
         {
-            throw new System.NotImplementedException();
+            _context.Dispose();
         }
     }
 }
